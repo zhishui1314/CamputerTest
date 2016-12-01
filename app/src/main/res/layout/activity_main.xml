@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.anke.vehicle.camputertest.MainActivity">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="从图库截图"
+    android:onClick="tuku"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照截图"
+        android:onClick="paizhao"/>
+   <com.anke.vehicle.camputertest.RoundImageViews
+       android:id="@+id/imgs"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       zhy:inside_color="#ff0"
+       zhy:outside_color="#f00"
+       zhy:thickness="1dp"/>
+</LinearLayout>
